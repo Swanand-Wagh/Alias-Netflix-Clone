@@ -10,7 +10,7 @@
   align-items: center;
   background-color: transparent;
   transition-timing-function: ease-in;
-  transition: all 0.65s;
+  transition: all 0.45s;
 }
 .nav_black {
   background-color: #111;
