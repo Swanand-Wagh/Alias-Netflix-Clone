@@ -10,5 +10,5 @@
     <li> Create a file called api_key.js and default export that key </li>
 </ul>
 
-<h3> View Demo !!! <a href=" " target="_blank">click me</a> </h3>
+<h3> View Demo !!! <a href="https://alias-netflix-clone.web.app/" target="_blank">click me</a> </h3>
 <h6>An Awesome Netflix Clone made using React-Js</h6>
