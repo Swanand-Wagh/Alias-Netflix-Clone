@@ -2,12 +2,14 @@ import React from "react";
 import Banner from "./components/Banner";
 import MovieRow from "./components/MovieRow";
 import requests from "./requests";
+import Nav from "./components/Nav";
 import "./App.css";
 
 const App = () => {
   return (
     <>
       <div className="App">
+        <Nav />
         <Banner />
         <MovieRow
           title="NETFLIX ORIGINALS"
