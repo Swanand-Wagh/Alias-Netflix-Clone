@@ -1,3 +1,7 @@
+.movieRow {
+  margin-left: 20px;
+  color: white;
+}
 .movieRow_posters {
   display: flex;
   overflow-x: scroll;
@@ -10,11 +14,17 @@
 .single_poster {
   object-fit: contain;
   width: 100%;
-  max-height: 250px;
+  max-height: 100px;
   margin-right: 10px;
   border-radius: 3.5px;
   transition: transform 450ms;
 }
 .single_poster:hover {
   transform: scale(1.08);
+}
+.large_poster {
+  max-height: 250px;
+}
+.large_poster:hover {
+  transform: scale(1.09);
 }

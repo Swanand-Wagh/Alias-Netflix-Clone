@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "../axios.js";
+import axios from "../axios.js"; //here axios is "instance" from axios.js, since its a default export, we can name it anything
 import "./MovieRow.css";
 
-const MovieRow = ({ title, fetchUrl }) => {
+const MovieRow = ({ title, fetchUrl, isLargeRow }) => {
   const base_url = "https://image.tmdb.org/t/p/original/";
   const [movies, setMovies] = useState([]);
 
@@ -26,9 +26,11 @@ const MovieRow = ({ title, fetchUrl }) => {
             return (
               <img
                 key={mov.id}
-                src={`${base_url}${mov.poster_path}`}
+                src={`${base_url}${
+                  isLargeRow ? mov.poster_path : mov.backdrop_path
+                }`}
                 alt={mov.name}
-                className="single_poster"
+                className={`single_poster ${isLargeRow && "large_poster"}`}
               />
             );
           })}
